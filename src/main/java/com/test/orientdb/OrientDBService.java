@@ -24,7 +24,7 @@ public class OrientDBService {
     ODatabaseDocumentInternal database;
 
     final String dbName = "TestDB";
-    @Value("${server.port}")
+    @Value("${server.dbName}")
     String nodeName;
     OCommandOutputListener listener = new OCommandOutputListener() {
         @Override
